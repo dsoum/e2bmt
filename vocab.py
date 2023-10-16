@@ -224,8 +224,8 @@ if __name__ == '__main__':
     print('read in source sentences: %s' % args['--train-src'])
     print('read in target sentences: %s' % args['--train-tgt'])
 
-    src_sents = get_vocab_list(args['--train-src'], source='src', vocab_size=800)          # EDIT: NEW VOCAB SIZE
-    tgt_sents = get_vocab_list(args['--train-tgt'], source='tgt', vocab_size=1600)
+    src_sents = get_vocab_list(args['--train-src'], source='src', vocab_size=8000)          # EDIT: NEW VOCAB SIZE
+    tgt_sents = get_vocab_list(args['--train-tgt'], source='tgt', vocab_size=16000)
     vocab = Vocab.build(src_sents, tgt_sents)
     print('generated vocabulary, source %d words, target %d words' % (len(src_sents), len(tgt_sents)))
 
