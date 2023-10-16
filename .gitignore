@@ -3,3 +3,5 @@ hasan*
 training/
 *.tar.bz2
 data/
+playbook*
+vocab_*
